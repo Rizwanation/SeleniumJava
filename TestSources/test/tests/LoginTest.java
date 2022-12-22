@@ -1,12 +1,13 @@
 import org.testng.annotations.Test;
 import sources.Driver;
 
-public class LoginTest extends Driver {
+public final class LoginTest extends baseTest {
 
-
+    private LoginTest(){}
     @Test
     public void test1()
     {
-        driver.get("https://www.gotdoodle.com");
+        Driver.getDriver().get("https://www.twitter.com");
     }
+
 }
