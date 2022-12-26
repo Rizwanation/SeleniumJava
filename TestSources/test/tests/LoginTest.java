@@ -1,32 +1,19 @@
+import config.ReadConfig;
 import org.testng.annotations.Test;
 import sources.Driver;
 import sources.DriverManager;
+
+import java.io.IOException;
+import java.time.Instant;
+import java.util.Date;
 
 public final class LoginTest extends baseTest {
 
     private LoginTest(){}
     @Test
-    public void test1()
-    {
-        DriverManager.getDriver().get("https://www.twitter.com");
-    }
+    public void test1() throws IOException {
+        System.out.println("test 2 at : " + Date.from(Instant.now()));
 
-    @Test
-    public void test2()
-    {
-        DriverManager.getDriver().get("https://www.twitter.com");
-    }
-
-    @Test
-    public void test3()
-    {
-        DriverManager.getDriver().get("https://www.twitter.com");
-    }
-
-    @Test
-    public void test4()
-    {
-        DriverManager.getDriver().get("https://www.twitter.com");
     }
 
 }
