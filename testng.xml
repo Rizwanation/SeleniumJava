@@ -3,8 +3,8 @@
 <suite name="All Test Suite">
     <test name="SeleniumJava" thread-count="2" parallel="methods" >
         <classes>
-            <class name="LoginTest"/>
-            <class name="HomepageTest"/>
+            <class name="LoginTest"></class>
+            <class name="HomepageTest"></class>
         </classes>
     </test>
 </suite>

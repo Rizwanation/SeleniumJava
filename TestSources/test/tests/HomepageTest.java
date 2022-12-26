@@ -1,5 +1,6 @@
 import org.testng.annotations.Test;
 import sources.Driver;
+import sources.DriverManager;
 
 public final class HomepageTest extends baseTest {
 
@@ -8,6 +9,6 @@ public final class HomepageTest extends baseTest {
     @Test
     public void googleTest()
     {
-        Driver.getDriver().get("https://www.google.com");
+        DriverManager.getDriver().get("https://www.google.com");
     }
 }
